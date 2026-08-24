@@ -17,8 +17,11 @@ They preserve the source pixels and rectangular background. They were not upscal
 
 ## Placement contract
 
+- Place exactly one combined lockup on every slide; do not split the emblem from the wordmark.
 - Choose the asset whose retained background matches the slide field.
+- Put the retained rectangle on a matching flat field or header rail; never float it over a visibly different gradient, photograph, or texture.
 - Scale proportionally only. Keep the image's width-to-height ratio unchanged.
+- At a 1280x720 render, do not display the lockup larger than its native pixel dimensions.
 - Do not crop inside the asset or separate the emblem from the wordmark.
 - Do not manufacture transparent, vector, monochrome, outlined, or alternate-color versions.
 - Do not substitute any web result, generated image, remembered logo, typed school name, or mark copied from a newly generated preview.
@@ -31,4 +34,3 @@ Run `python scripts/verify_assets.py` after cloning and before every identity-se
 The repository retains three full source renders so an agent can understand composition. Their visible copy and imagery are examples, not output assets. Only the two declared combined-lockup files may be copied from this repository into a generated deck.
 
 The retained source includes `110` anniversary material. Do not copy or derive any anniversary text, icons, numerals, ribbons, slogans, or decorative motifs. Pixel-level visual inspection is required because those elements may be baked into raster images.
-

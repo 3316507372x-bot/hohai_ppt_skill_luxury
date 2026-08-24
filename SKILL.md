@@ -27,7 +27,7 @@ Run `python scripts/verify_assets.py` before authoring. Stop if verification fai
 1. Read [references/visual-system.md](references/visual-system.md). Read [references/asset-provenance.md](references/asset-provenance.md) whenever identity placement, source reuse, or fidelity is in question.
 2. Build the user's narrative from their content. Treat all visible source-deck copy, people, diagrams, photographs, admissions material, and `110` anniversary elements as prohibited sample content.
 3. Create opening, divider, content, image-led, and closing slides with editable text, shapes, charts, and tables. Use independent topic visuals; add `[Sources]` notes where Presentations requires them.
-4. Place exactly one retained combined lockup appropriate to the background. Scale proportionally only. Never redraw, retype, vectorize, generate, fetch, recolor, sharpen, stretch, background-remove, or reconstruct it.
+4. Place exactly one retained combined lockup on every slide, choosing the variant appropriate to that slide's background. Match the crop's retained rectangular background with a flat field or header rail so no patch edge is visible. Scale proportionally only, and do not enlarge it beyond its native pixel dimensions in a 1280×720 render. Never redraw, retype, vectorize, generate, fetch, recolor, sharpen, stretch, background-remove, or reconstruct it.
 5. Render every slide and inspect at full size. Verify identity visibility, editability, spacing, crops, absence of source content, and absence of all anniversary pixels or wording.
 
 ## Quick reference
