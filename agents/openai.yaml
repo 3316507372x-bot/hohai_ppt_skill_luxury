@@ -1,0 +1,5 @@
+interface:
+  display_name: "Hohai PPT Luxury"
+  short_description: "Create Hohai University blue-white PowerPoint decks"
+  brand_color: "#0B4EA2"
+  default_prompt: "Use $hohai-ppt-skill-luxury to create an editable Hohai University presentation."
