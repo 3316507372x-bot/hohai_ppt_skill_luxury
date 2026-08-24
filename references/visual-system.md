@@ -19,7 +19,7 @@ These images contain sample content. Read them for composition only; never copy 
 | Deep Hohai blue | Use near `#074A99` to `#0B3F86` for covers, dividers, conclusion strips, and strong rules. |
 | Primary blue | Use near `#0B5CB8` for headings, icons, and connectors. |
 | Pale field | Use `#F4F9FE` to `#EAF4FC` for content backgrounds. |
-| White | Use for titles and identity on deep blue. |
+| White | Use for titles and for the intentional identity plate or rail that holds the blue combined lockup on deep blue. |
 | Warm ivory | Optional for one high-emphasis cover or closing title; keep it restrained. |
 
 Prefer a bold Chinese Song/Heiti-inspired title face available on the system, with a neutral sans-serif for English and numbers. Match source proportions rather than guessing exact rasterized font names. Keep titles on one line when intended; change wording or layout before shrinking type.
