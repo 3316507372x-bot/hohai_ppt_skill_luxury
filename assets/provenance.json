@@ -36,7 +36,7 @@
       "role": "image-led-content-style"
     }
   ],
-  "identity_assets": [
+  "source_reference_crops": [
     {
       "path": "assets/hohai-lockup-on-dark.png",
       "role": "light-on-dark",
@@ -58,6 +58,33 @@
       "sha256": "dc323728b6198e5441de5a0c714fabf9a22f9c62dbbf625bbc8295f1c5825ed6",
       "bytes": 12927,
       "transform": "Exact rectangular pixel crop; no scaling, alpha conversion, recoloring, sharpening, tracing, or background removal."
+    }
+  ],
+  "identity_assets": [
+    {
+      "path": "assets/hohai-emblem-authorized.png",
+      "role": "standalone-emblem",
+      "source_type": "user-provided",
+      "public_use_authorized": true,
+      "authorization_date": "2026-08-24",
+      "dimensions": [1181, 1181],
+      "content_bbox": [370, 340, 848, 817],
+      "image_mode": "RGBA",
+      "sha256": "33964dfeff34fbd793c627e93b07eb0557a3234a5caa0aa1e1b8a13993b625b4",
+      "bytes": 315038,
+      "transform": "Exact byte-for-byte copy of the user-provided transparent PNG; no crop, scaling, recoloring, sharpening, tracing, or background removal."
+    },
+    {
+      "path": "assets/hohai-lockup-authorized.jpg",
+      "role": "combined-lockup",
+      "source_type": "user-provided",
+      "public_use_authorized": true,
+      "authorization_date": "2026-08-24",
+      "dimensions": [586, 174],
+      "image_mode": "RGB",
+      "sha256": "14e264676ec632621545460348c61cf75ba6f2f41ffb92f58c232c766232ed01",
+      "bytes": 26853,
+      "transform": "Exact byte-for-byte copy of the user-provided JPEG; no crop, scaling, recoloring, sharpening, tracing, or background removal."
     }
   ]
 }

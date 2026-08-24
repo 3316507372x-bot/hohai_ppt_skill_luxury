@@ -12,8 +12,18 @@ from PIL import Image
 
 
 MANIFEST_PATH = Path("assets/provenance.json")
-REQUIRED_TOP_LEVEL = {"schema_version", "source", "reference_renders", "identity_assets"}
+REQUIRED_TOP_LEVEL = {
+    "schema_version",
+    "source",
+    "reference_renders",
+    "source_reference_crops",
+    "identity_assets",
+}
 ALLOWED_IDENTITY_FILES = {
+    "assets/hohai-emblem-authorized.png",
+    "assets/hohai-lockup-authorized.jpg",
+}
+SOURCE_REFERENCE_CROP_FILES = {
     "assets/hohai-lockup-on-dark.png",
     "assets/hohai-lockup-on-light.png",
 }
@@ -85,21 +95,15 @@ def verify_repository(root: Path) -> list[str]:
         if isinstance(slide, int):
             render_by_slide[slide] = entry
 
-    seen_roles: set[str] = set()
-    seen_identity_paths: set[str] = set()
-    for entry in manifest.get("identity_assets", []):
+    seen_reference_crop_paths: set[str] = set()
+    for entry in manifest.get("source_reference_crops", []):
         _verify_file(root, entry, errors, require_dimensions=True)
-        role = entry.get("role")
         relative = entry.get("path")
-        if role:
-            seen_roles.add(role)
         if relative:
             normalized = str(relative).replace("\\", "/")
-            seen_identity_paths.add(normalized)
-            if normalized not in ALLOWED_IDENTITY_FILES:
-                errors.append(f"unapproved identity path: {normalized}")
-            if "generated" in normalized.lower() or Path(normalized).name.lower().startswith("exec-"):
-                errors.append(f"generated identity asset is forbidden: {normalized}")
+            seen_reference_crop_paths.add(normalized)
+            if normalized not in SOURCE_REFERENCE_CROP_FILES:
+                errors.append(f"unapproved source reference crop path: {normalized}")
 
         slide = entry.get("source_slide")
         crop = entry.get("crop_box")
@@ -117,10 +121,33 @@ def verify_repository(root: Path) -> list[str]:
         if entry.get("dimensions") != [right - left, bottom - top]:
             errors.append(f"identity dimensions do not match crop_box: {relative}")
 
-    if seen_roles != {"light-on-dark", "dark-on-light"}:
-        errors.append("identity roles must be exactly light-on-dark and dark-on-light")
+    if seen_reference_crop_paths != SOURCE_REFERENCE_CROP_FILES:
+        errors.append("source reference crop paths must be exactly the two retained source crops")
+
+    seen_roles: set[str] = set()
+    seen_identity_paths: set[str] = set()
+    for entry in manifest.get("identity_assets", []):
+        _verify_file(root, entry, errors, require_dimensions=True)
+        role = entry.get("role")
+        relative = entry.get("path")
+        if role:
+            seen_roles.add(role)
+        if entry.get("source_type") != "user-provided":
+            errors.append(f"identity asset is not declared user-provided: {relative}")
+        if entry.get("public_use_authorized") is not True:
+            errors.append(f"identity asset lacks public-use authorization: {relative}")
+        if relative:
+            normalized = str(relative).replace("\\", "/")
+            seen_identity_paths.add(normalized)
+            if normalized not in ALLOWED_IDENTITY_FILES:
+                errors.append(f"unapproved identity path: {normalized}")
+            if "generated" in normalized.lower() or Path(normalized).name.lower().startswith("exec-"):
+                errors.append(f"generated identity asset is forbidden: {normalized}")
+
+    if seen_roles != {"combined-lockup", "standalone-emblem"}:
+        errors.append("identity roles must be exactly combined-lockup and standalone-emblem")
     if seen_identity_paths != ALLOWED_IDENTITY_FILES:
-        errors.append("identity paths must be exactly the two approved lockup assets")
+        errors.append("identity paths must be exactly the two user-authorized identity assets")
 
     return errors
 

@@ -29,7 +29,7 @@ Prefer a bold Chinese Song/Heiti-inspired title face available on the system, wi
 ### Opening
 
 - Deep-blue vertical gradient with substantial negative space.
-- Authentic light-on-dark lockup near the top center or upper right.
+- Exact combined lockup near the top center or upper right, contained in a deliberate white identity plate or rail.
 - One concise title, one subtitle, and at most one small descriptor.
 - A realistic water-engineering or campus panorama across the lower third to half.
 - Subtle water ribbons, terrain contours, or data paths may frame the lower edge; they remain decorative and never compete with the title.
@@ -45,7 +45,7 @@ Prefer a bold Chinese Song/Heiti-inspired title face available on the system, wi
 
 - Pale blue-white field.
 - A small section label and thin horizontal rule across the top.
-- Authentic dark-on-light lockup at the upper right.
+- Exact combined lockup at the upper right on a white header rail.
 - Bold dark-blue Chinese title; information reads left to right or top to bottom.
 - Prefer one flat composition: image plus explanation, process flow, comparison, chart, or table.
 - Use a pale-blue takeaway strip or dark-blue conclusion strip only when the page needs a single conclusion.
@@ -59,7 +59,7 @@ Prefer a bold Chinese Song/Heiti-inspired title face available on the system, wi
 
 ### Closing
 
-- Return to deep blue and the light-on-dark lockup.
+- Return to deep blue and place the exact combined lockup in a deliberate white identity plate or rail.
 - Use one short closing title and one optional statement.
 - Use one panoramic or organic-window water-engineering image.
 - Exclude contact details, QR codes, admissions slogans, and anniversary marks unless the current user explicitly supplies and requests them; the retained deck does not authorize them.
@@ -73,6 +73,5 @@ For a digital-twin water-conservancy presentation: opening title; challenge; sen
 - Every narrative element remains editable.
 - Adjacent slides vary silhouette while keeping the same chrome and spacing rhythm.
 - No whole source slide appears as a background.
-- The selected lockup is legible at normal slide-view scale and retains its original aspect ratio.
+- The exact user-authorized combined lockup appears once per slide, is legible at normal slide-view scale, and retains its original aspect ratio and white field.
 - No `110`, anniversary slogan, or anniversary-only motif appears in text or pixels.
-

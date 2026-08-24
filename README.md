@@ -16,7 +16,8 @@ Invoke it as `$hohai-ppt-skill-luxury` and describe the presentation you want.
 
 - The user-authorized source PPTX.
 - Three source-render references for opening, content, and image-led composition.
-- Two exact combined emblem/wordmark crops from the source deck.
+- Two exact user-authorized identity files: a standalone transparent emblem and a combined emblem plus Chinese/English school-name lockup.
+- Two source-deck lockup crops retained only for provenance comparison.
 - Hash-based provenance and an asset verifier.
 
 Run the verifier after cloning:
@@ -25,5 +26,4 @@ Run the verifier after cloning:
 python scripts\verify_assets.py
 ```
 
-The source deck controls style and identity only. Its subject matter and every `110` anniversary element are excluded from reusable output behavior.
-
+The source deck controls style only. The two user-provided identity images control the reusable emblem and school-name treatment. Source subject matter and every `110` anniversary element are excluded from reusable output behavior.
