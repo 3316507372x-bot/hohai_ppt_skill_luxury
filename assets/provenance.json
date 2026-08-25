@@ -152,5 +152,24 @@
       "bytes": 16323,
       "transform": "Exact byte-for-byte copy of the user-provided transparent PNG (white artwork, transparent background); supplied and authorized by the user on 2026-08-25 for dark-background placement."
     }
+  ],
+  "background_photos": [
+    {
+      "path": "assets/photos/three-gorges-dam.jpg",
+      "role": "divider-and-content-background",
+      "subject": "Three Gorges Dam ship-lift and gantry cranes",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Three_Gorges_Dam_2015-07-25.jpg",
+      "author": "Thomas Bächinger",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution_line": "Photo: Thomas Bächinger / Wikimedia Commons, CC BY-SA 2.0",
+      "dimensions": [
+        1920,
+        1065
+      ],
+      "sha256": "9ec0e2a4cd08389e97e1e06b4ab9367865fef4e5039854bc3f11a948caa762df",
+      "bytes": 391503,
+      "note": "User selected this photo on 2026-08-25 as the standard divider/content background; used under a semi-transparent white overlay (≈88% divider, ≈93% content)."
+    }
   ]
 }
