@@ -40,7 +40,7 @@ Run `python scripts/verify_assets.py` before authoring. If `python` is unavailab
 
 1. Read [references/visual-system.md](references/visual-system.md). Read [references/asset-provenance.md](references/asset-provenance.md) whenever identity placement, source reuse, or fidelity is in question.
 2. Build the user's narrative from their content. Treat all visible source-deck copy, people, diagrams, photographs, admissions material, and `110` anniversary elements as prohibited sample content.
-3. Create opening, divider, content, image-led, and closing slides with editable text, shapes, charts, and tables. Divider and content backgrounds use one shared free-licensed water-engineering photograph (a dam preferred; Wikimedia Commons works well) under a semi-transparent white overlay — ≈88% opacity on the divider, ≈93% on content pages. Record the photo's license and attribution in the slide's `[Sources]` notes. Use independent topic visuals elsewhere.
+3. Create opening, divider, content, image-led, and closing slides with editable text, shapes, charts, and tables. Divider and content backgrounds use the retained photograph `assets/photos/three-gorges-dam.jpg` under a semi-transparent white overlay — ≈88% opacity on the divider, ≈93% on content pages. It is CC BY-SA 2.0 (Thomas Bächinger / Wikimedia Commons): record that attribution in the slide's `[Sources]` notes. Use independent topic visuals elsewhere.
 4. Place the combined lockup exactly once on every slide, choosing the colorway by background: `hohai-lockup-blue-transparent.png` on light backgrounds, `hohai-lockup-white-transparent.png` on dark backgrounds; place it directly — never add a plate, rail, or mat behind it — and keep clear space of at least 25% of the lockup's height on all sides. Scale proportionally only. `assets/hohai-emblem-authorized.png` is optional and may be PowerPoint-cropped only to its declared transparent-margin `content_bbox`; never crop visible emblem pixels. Omit the optional emblem when it would merely duplicate the emblem already present in the combined lockup. Never redraw, retype, vectorize, generate, fetch, recolor, sharpen, stretch, background-remove, or reconstruct either asset.
 5. Render every slide and inspect at full size. Verify identity visibility, editability, spacing, crops, absence of source content, and absence of all anniversary pixels or wording. For identity: zoom to 100% on each lockup — the colorway must contrast with its background, and no white rectangle may sit behind or around any lockup.
 
@@ -49,7 +49,7 @@ Run `python scripts/verify_assets.py` before authoring. If `python` is unavailab
 | Slide need | Pattern | Identity placement |
 |---|---|---|
 | Opening or closing | Deep-blue gradient, minimal copy, one water or campus panorama | `hohai-lockup-white-transparent.png` directly on the blue, top center or upper right |
-| Section divider | Free-licensed dam photo under ≈88% white wash; oversized section number, two-line title | `hohai-lockup-blue-transparent.png` directly on the wash, top center or upper right |
+| Section divider | Retained dam photo under ≈88% white wash; oversized section number, two-line title | `hohai-lockup-blue-transparent.png` directly on the wash, top center or upper right |
 | Standard content | Same photo under ≈93% white wash, thin top rule | `hohai-lockup-blue-transparent.png` directly on the wash, upper right |
 | Image-led content | Standard content chrome plus aligned rounded image frames | `hohai-lockup-blue-transparent.png` directly on the wash, upper right |
 

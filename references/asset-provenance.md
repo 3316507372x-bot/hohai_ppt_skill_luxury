@@ -36,6 +36,6 @@ Run `python scripts/verify_assets.py` after cloning and before every identity-se
 
 The repository retains three full source renders and two exact source-deck identity crops so an agent can understand composition and verify lineage. Their visible copy and imagery are examples, not output assets. Only the four user-authorized identity files declared under `identity_assets` may enter a generated deck as identity marks.
 
-Divider and content photo backgrounds are external, not retained here: use only free-licensed photographs (e.g. Wikimedia Commons, CC/public-domain), and record license plus attribution in the deck's `[Sources]` notes.
+The retained divider/content background `../assets/photos/three-gorges-dam.jpg` is a free-licensed photograph (Three Gorges Dam, by Thomas Bächinger, CC BY-SA 2.0, via Wikimedia Commons), registered under `background_photos` in `../assets/provenance.json`. Use it under the white-wash overlays specified in the visual system, and record the attribution line ("Photo: Thomas Bächinger / Wikimedia Commons, CC BY-SA 2.0") in the deck's `[Sources]` notes.
 
 The retained source includes `110` anniversary material. Do not copy or derive any anniversary text, icons, numerals, ribbons, slogans, or decorative motifs. Pixel-level visual inspection is required because those elements may be baked into raster images.

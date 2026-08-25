@@ -20,7 +20,7 @@ These images contain sample content. Read them for composition only; never copy 
 |---|---|
 | Deep Hohai blue | Use near `#074A99` to `#0B3F86` for covers, closings, conclusion strips, and strong rules. Prefer subtle gradients between nearby blues (e.g. `#0B3F86` → `#1E6FC4`) over large flat fills. |
 | Primary blue | Use near `#0B5CB8` for headings, icons, and connectors. |
-| Photo wash | Divider: white overlay ≈88% opacity over a free-licensed dam photo. Content pages: ≈93%. The wash is a light field and carries the blue lockup colorway. |
+| Photo wash | Divider: white overlay ≈88% opacity over the retained dam photo (`../assets/photos/three-gorges-dam.jpg`). Content pages: ≈93%. The wash is a light field and carries the blue lockup colorway. |
 | Pale field | `#F4F9FE` to `#EAF4FC` — fallback content background when no suitable photo is available. |
 | White | Titles on deep blue. The transparent lockup colorways need no white plate or rail behind them. |
 | Warm ivory | Optional for one high-emphasis cover or closing title; keep it restrained. |
@@ -41,7 +41,7 @@ Match source proportions rather than guessing exact rasterized font names. Keep 
 
 ### Section divider
 
-- Full-bleed free-licensed water-engineering photograph — a dam preferred (e.g. Three Gorges Dam via Wikimedia Commons) — under a semi-transparent white overlay at about **88% opacity**, so the structure reads faintly through.
+- Full-bleed background: the retained Three Gorges Dam photograph (`../assets/photos/three-gorges-dam.jpg`, CC BY-SA 2.0) under a semi-transparent white overlay at about **88% opacity**, so the structure reads faintly through.
 - An oversized section number and a two-line maximum title in the title face; deep navy on the light wash.
 - Exact combined lockup near the top center or upper right — `hohai-lockup-blue-transparent.png` placed directly on the light wash.
 - Subtle contour-line or water-wave decoration may frame an edge; never compete with the title.
@@ -49,7 +49,7 @@ Match source proportions rather than guessing exact rasterized font names. Keep 
 
 ### Standard content
 
-- Same photographic treatment as the divider but denser: free-licensed dam photo under a white overlay at about **93% opacity**, dense enough that body text stays crisp.
+- Same photographic treatment as the divider but denser: the retained dam photo under a white overlay at about **93% opacity**, dense enough that body text stays crisp.
 - A small section label and thin horizontal rule across the top.
 - Exact combined lockup at the upper right — `hohai-lockup-blue-transparent.png` placed directly on the wash.
 - Bold dark-blue Chinese title; information reads left to right or top to bottom.

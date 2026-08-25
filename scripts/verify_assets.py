@@ -29,6 +29,9 @@ SOURCE_REFERENCE_CROP_FILES = {
     "assets/hohai-lockup-on-dark.png",
     "assets/hohai-lockup-on-light.png",
 }
+REQUIRED_BACKGROUND_PHOTOS = {
+    "assets/photos/three-gorges-dam.jpg",
+}
 
 
 def sha256_file(path: Path) -> str:
@@ -157,7 +160,22 @@ def verify_repository(root: Path) -> list[str]:
             "combined-lockup-light-background, and combined-lockup-dark-background"
         )
     if seen_identity_paths != ALLOWED_IDENTITY_FILES:
-        errors.append("identity paths must be exactly the two user-authorized identity assets")
+        errors.append("identity paths must be exactly the four user-authorized identity assets")
+
+    photos = manifest.get("background_photos", [])
+    seen_photo_paths = set()
+    for entry in photos:
+        _verify_file(root, entry, errors, require_dimensions=True)
+        relative = entry.get("path")
+        if relative:
+            normalized = str(relative).replace("\\", "/")
+            seen_photo_paths.add(normalized)
+            if normalized not in REQUIRED_BACKGROUND_PHOTOS:
+                errors.append(f"unapproved background photo path: {normalized}")
+        if entry.get("license") != "CC BY-SA 2.0":
+            errors.append(f"background photo missing CC BY-SA 2.0 license declaration: {relative}")
+    if seen_photo_paths != REQUIRED_BACKGROUND_PHOTOS:
+        errors.append("background photos must be exactly the retained three-gorges-dam.jpg")
 
     return errors
 
