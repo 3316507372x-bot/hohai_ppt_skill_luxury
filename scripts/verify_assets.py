@@ -22,6 +22,8 @@ REQUIRED_TOP_LEVEL = {
 ALLOWED_IDENTITY_FILES = {
     "assets/hohai-emblem-authorized.png",
     "assets/hohai-lockup-authorized.jpg",
+    "assets/hohai-lockup-blue-transparent.png",
+    "assets/hohai-lockup-white-transparent.png",
 }
 SOURCE_REFERENCE_CROP_FILES = {
     "assets/hohai-lockup-on-dark.png",
@@ -144,8 +146,16 @@ def verify_repository(root: Path) -> list[str]:
             if "generated" in normalized.lower() or Path(normalized).name.lower().startswith("exec-"):
                 errors.append(f"generated identity asset is forbidden: {normalized}")
 
-    if seen_roles != {"combined-lockup", "standalone-emblem"}:
-        errors.append("identity roles must be exactly combined-lockup and standalone-emblem")
+    if seen_roles != {
+        "combined-lockup",
+        "standalone-emblem",
+        "combined-lockup-light-background",
+        "combined-lockup-dark-background",
+    }:
+        errors.append(
+            "identity roles must be exactly combined-lockup, standalone-emblem, "
+            "combined-lockup-light-background, and combined-lockup-dark-background"
+        )
     if seen_identity_paths != ALLOWED_IDENTITY_FILES:
         errors.append("identity paths must be exactly the two user-authorized identity assets")
 
