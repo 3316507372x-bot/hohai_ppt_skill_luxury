@@ -18,7 +18,7 @@ They were not cropped, upscaled, background-removed, traced, redrawn, retyped, r
 ## Placement contract
 
 - Place `hohai-lockup-authorized.jpg` exactly once on every slide; do not split the emblem from the wordmark.
-- Every slide background is solid pure white `#FFFFFF`, so place the JPEG directly on the background with no plate or rail behind it; its white field blends seamlessly.
+- The JPEG carries a permanent pure-white (`#FFFFFF`) field: blend it only on pure-white backgrounds; on tinted or deep-blue areas contain it in a white rail (flush with an edge, square corners) or a white plate (uniform padding of 20–30% of lockup height, fully inside one color region) — never a floating rounded box, never straddling a color boundary, never blended on a tinted fill.
 - Scale proportionally only. Keep the image's width-to-height ratio unchanged.
 - Do not crop inside the combined JPEG or separate the emblem from the wordmark.
 - The standalone PNG is optional. If its empty margins obstruct placement, use PowerPoint's non-destructive crop to the declared `content_bbox` `[370, 340, 848, 817]`; never crop visible emblem pixels.

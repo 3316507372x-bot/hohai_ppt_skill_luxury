@@ -4,24 +4,25 @@
 
 Express formal Chinese university reporting with strong Hohai identity, restrained water imagery, clear technical hierarchy, and an editable PowerPoint structure. The design should feel academic and authoritative, not like a neon control-room dashboard or a generic corporate template.
 
-**Background invariant:** every slide's base fill is solid pure white `#FFFFFF`. Hohai blue appears in type, rules, strips, frames, and imagery — never as a slide background. Authority comes from blue typography, spacing, and photography on white, not from colored fills.
+**Identity harmony invariant:** the combined lockup JPEG carries a permanent pure-white (`#FFFFFF`) field. Blend it only on pure-white backgrounds; on tinted or colored areas, frame it in a clean white plate or rail (exact specs under "Identity harmony" below; a subtle gradient or ribbon wedge in the surrounding blue helps Frame read as designed). Never blend on a tinted fill, never a floating rounded box, never a plate straddling a color boundary. Backgrounds are otherwise free.
 
 ## Source references
 
-- `../assets/preview.png`: cover composition, centered identity, large title, campus panorama, light water ribbons.
-- `../assets/reference-middle.png`: content-page top rail, upper-right identity, bold Chinese hierarchy, layered blue conclusion strip.
+- `../assets/preview.png`: cover composition, deep-blue gradient, centered identity, large title, campus panorama, light water ribbons.
+- `../assets/reference-middle.png`: content-page top rail, upper-right identity, pale blue-white field, bold Chinese hierarchy, layered blue conclusion strip.
 - `../assets/reference-image-page.png`: image-led page, aligned rounded frames, concise captions, panoramic lower image.
 
-These images contain sample content. Read them for composition only; never copy their text, people, diagrams, photographs, or anniversary material. Their deep-blue and pale-blue full-slide fills are a legacy pattern: reproduce the composition, never the tinted backgrounds — every output slide stays pure white.
+These images contain sample content. Read them for composition only; never copy their text, people, diagrams, photographs, or anniversary material.
 
 ## Palette and typography
 
 | Role | Guidance |
 |---|---|
-| Slide background | Solid `#FFFFFF` on every slide, including opening, divider, and closing pages. No gradients, tints, or pale-blue fields. |
-| Deep Hohai blue | Use near `#074A99` to `#0B3F86` for display type, section numbers, conclusion strips, and strong rules — never as a slide background. |
+| Deep Hohai blue | Use near `#074A99` to `#0B3F86` for covers, dividers, conclusion strips, and strong rules. Prefer subtle gradients between nearby blues (e.g. `#0B3F86` → `#1E6FC4`) over large flat fills. |
 | Primary blue | Use near `#0B5CB8` for headings, icons, and connectors. |
-| Pale blue accent | Use `#EAF4FC` sparingly for small takeaway strips, table header rows, or card fills layered on top of white; never as a full-slide field. |
+| Pale field | Use `#F4F9FE` to `#EAF4FC` for content backgrounds. |
+| White | Use for titles on deep blue and for the intentional identity plate or rail that holds the blue combined lockup on deep blue. |
+| Warm ivory | Optional for one high-emphasis cover or closing title; keep it restrained. |
 
 Prefer a bold Chinese Song/Heiti-inspired title face available on the system, with a neutral sans-serif for English and numbers. Match source proportions rather than guessing exact rasterized font names. Keep titles on one line when intended; change wording or layout before shrinking type.
 
@@ -29,39 +30,40 @@ Prefer a bold Chinese Song/Heiti-inspired title face available on the system, wi
 
 ### Opening
 
-- Pure white background with substantial negative space.
-- Exact combined lockup near the top center or upper right, placed directly on the white background with no plate or rail.
-- One concise title in deep Hohai blue, one subtitle, and at most one small descriptor.
+- Deep-blue vertical gradient with substantial negative space; vary the gradient across the identity zone (deep toward one corner, lighter toward the plate) so no large flat area sits behind or beside the identity plate.
+- Exact combined lockup near the top center or upper right, contained in a deliberate white identity plate or rail that is flush with an edge or fully inside the blue field with even margins.
+- One concise title, one subtitle, and at most one small descriptor.
 - A realistic water-engineering or campus panorama across the lower third to half.
-- Subtle pale-blue water ribbons, terrain contours, or data paths may frame the lower edge; they remain decorative and never compete with the title.
+- Subtle water ribbons, terrain contours, or data paths may frame the lower edge; they remain decorative and never compete with the title.
 
 ### Section divider
 
-- Pure white field with an oversized deep-blue section number and a two-line maximum title.
-- One organic rounded photographic window, normally on the right, framed by a thin blue keyline if it needs separation from white.
-- Faint pale-blue contour-line or water-wave decoration.
+- Deep-blue field with a small section number and a two-line maximum title.
+- One organic rounded photographic window, normally on the right.
+- Faint contour-line or water-wave decoration.
+- Exact combined lockup in an edge-aligned white identity plate; never floating mid-blue.
 - No body copy and no UI cards.
 
 ### Standard content
 
-- Pure white field.
-- A small blue section label and thin horizontal rule across the top.
-- Exact combined lockup at the upper right, directly on the white background.
+- Pale blue-white field.
+- A small section label and thin horizontal rule across the top.
+- Exact combined lockup at the upper right, seated on a white header rail that is flush with the top edge (never blended directly on the tinted field).
 - Bold dark-blue Chinese title; information reads left to right or top to bottom.
 - Prefer one flat composition: image plus explanation, process flow, comparison, chart, or table.
 - Use a pale-blue takeaway strip or dark-blue conclusion strip only when the page needs a single conclusion.
 
 ### Image-led content
 
-- Preserve the standard top label, rule, and lockup on white.
+- Preserve the standard top rail and lockup.
 - Use two to six consistently cropped rounded image frames.
 - Captions stay short, aligned, and readable.
 - A single panorama may anchor the lower edge when it materially supports the topic.
 
 ### Closing
 
-- Return to pure white and place the exact combined lockup directly on the background.
-- Use one short closing title in deep Hohai blue and one optional statement.
+- Return to deep blue and place the exact combined lockup in a deliberate white identity plate or rail that is flush with an edge or fully inside the blue field.
+- Use one short closing title and one optional statement.
 - Use one panoramic or organic-window water-engineering image.
 - Exclude contact details, QR codes, admissions slogans, and anniversary marks unless the current user explicitly supplies and requests them; the retained deck does not authorize them.
 
@@ -74,34 +76,31 @@ For a digital-twin water-conservancy presentation: opening title; challenge; sen
 - Every narrative element remains editable.
 - Adjacent slides vary silhouette while keeping the same chrome and spacing rhythm.
 - No whole source slide appears as a background.
-- Every slide's base fill is solid `#FFFFFF`; no gradient, tinted, deep-blue, or pale-blue full-slide field exists anywhere in the deck.
 - The exact user-authorized combined lockup appears once per slide, is legible at normal slide-view scale, and retains its original aspect ratio and white field.
+- The lockup's white field always reads as intentional: blended on pure white (boundary invisible), or contained in a white rail or plate per the Identity harmony specs — never blended on a tinted fill, never a floating rounded box, never straddling a boundary between two color regions.
 - No `110`, anniversary slogan, or anniversary-only motif appears in text or pixels.
 
-## Background rule — non-negotiable
+## Identity harmony
 
-Set every slide's base fill to solid `#FFFFFF` before adding any element.
+The combined lockup JPEG carries a permanent pure-white (`#FFFFFF`) field. Place it by exactly one of two modes:
 
-**No exceptions:**
-- Do not use deep-blue gradients on covers or closings.
-- Do not use solid deep-blue fields on dividers.
-- Do not use pale fields (`#F4F9FE`, `#EAF4FC`, or any near-white tint) as slide fills.
-- Do not place a colored rectangle or panel covering most of the slide as a de-facto background.
-- Do not treat "very light blue" as white; only `#FFFFFF` counts.
+- **Blend** — only on pure `#FFFFFF` backgrounds. Place the lockup directly; the field is invisible. On tinted areas (even `#F4F9FE`) the field shows as a faint rectangle, so blending there is forbidden — use Frame.
+- **Frame** — a white (`#FFFFFF`) plate or rail on a colored area:
+  - **Rail (flush):** anchored to the slide edge or band edge with zero offset; square corners (radius 0); no border stroke.
+  - **Plate (inside color):** fully inside one color region; uniform padding around the lockup image of 20–30% of the lockup's height on all sides; corner radius at most 10% of plate height; at most one subtle soft shadow; never straddling a color boundary — keep at least one padding-width of clear color between the plate and any boundary.
+  - The plate must be visibly larger than the lockup's white field on every side; a plate hugging the field edge reads as a raw paste.
 
-| Excuse | Reality |
-|---|---|
-| "Covers need deep blue for formality" | Formality comes from blue display type, spacing, and photography on white. |
-| "Pale blue is basically white" | Only `#FFFFFF` counts; every tint is prohibited. |
-| "A gradient adds depth to the cover" | Depth comes from the panorama image and negative space, not background fills. |
-| "The photo window needs a colored backdrop" | Photo windows sit directly on white with an optional thin blue keyline. |
-| "This deck is special; one blue cover is fine" | The invariant has no exceptions; one violation breaks the whole system. |
+**Ideas that help Frame read as designed:**
 
-## Red flags — STOP and fix before continuing
+- A subtle two-stop deep-blue gradient across the surrounding field (`#0B3F86` → `#1E6FC4`), deepening away from the plate; avoid larger jumps that band.
+- Layered ribbon or wedge shapes in a lighter blue near the plate, echoing the water motif.
+- A full-width white rail along the top edge, so the plate becomes part of the page structure.
+- Align the plate to the content grid so it shares edges and spacing with other elements.
 
-- Choosing `#F4F9FE`, `#EAF4FC`, or any gradient for a slide fill.
-- A deep-blue opening, divider, or closing page.
-- A colored panel covering most of a slide.
-- Any slide fill described as "pale", "tinted", or "blue-white".
+**Never:**
 
-**All of these mean: set the slide fill back to solid `#FFFFFF` before doing anything else.**
+- Blend on a tinted background (any fill that is not `#FFFFFF`).
+- A floating rounded box with colored margins on all four sides.
+- A plate or lockup straddling the boundary between two color regions.
+
+**Verification:** render the slide, zoom to 100% on the lockup, and confirm: in Blend the field boundary is invisible; in Frame the padding is even and no plate edge crosses a color boundary.
