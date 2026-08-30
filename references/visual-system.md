@@ -83,6 +83,7 @@ For a digital-twin water-conservancy presentation: opening title; challenge; sen
 - No whole source slide appears as a background.
 - The exact user-authorized combined lockup appears once per slide, is legible at normal slide-view scale, and retains its original aspect ratio.
 - The colorway always contrasts with its background: blue transparent version on light, white transparent version on dark; no white rectangle sits behind or around any lockup.
+- In imported decks, treat the inherited lockup image as a contrast-sensitive element: replace a white lockup on a light field with the exact blue transparent asset, and replace a blue lockup on a deep-blue field with the exact white transparent asset. Never recolor either asset.
 - Every title, section label, page label, caption, and note remains legible against its actual rendered background; white/near-white text is never placed on a light wash or pale-blue field.
 - No `110`, anniversary slogan, or anniversary-only motif appears in text or pixels.
 
