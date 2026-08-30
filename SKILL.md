@@ -42,13 +42,20 @@ Run `python scripts/verify_assets.py` before authoring. If `python` is unavailab
 - If `Microsoft YaHei` is unavailable, fall back in order to `Source Han Sans SC` (`思源黑体`) or `Noto Sans CJK SC`, then `DengXian` (`等线`). Use `Aptos` or `Arial` for English and numbers.
 - Do not use macOS-only `Songti SC`, `Hiragino Sans GB`, or `PingFang SC` as the primary font in Windows PowerPoint deliverables. Render and inspect the final PPTX; never rasterize text.
 
+## Readability and contrast
+
+- Treat the retained source deck's inherited text colors as untrusted. After importing or duplicating a source slide, repair typography **and** text color before rendering.
+- On light backgrounds — including the 83% content wash, white content fields, and pale-blue header bands — use deep Hohai blue (`#074A99` or `#0B3F86`) for titles, section labels, page labels, captions, and notes. White or near-white text is prohibited on these light fields.
+- Use white text only on confirmed deep-blue fields or sufficiently dark image areas. Do not rely on a theme color, a master placeholder, or the source slide's inherited color to establish contrast.
+- Render every slide at full size and inspect every title, section label, page label, and caption at normal presentation scale. Reject white-on-pale, pale-on-pale, clipped, missing, or visibly faint text before delivery.
+
 ## Workflow
 
 1. Read [references/visual-system.md](references/visual-system.md). Read [references/asset-provenance.md](references/asset-provenance.md) whenever identity placement, source reuse, or fidelity is in question.
 2. Build the user's narrative from their content. Treat all visible source-deck copy, people, diagrams, photographs, admissions material, and `110` anniversary elements as prohibited sample content.
 3. Create opening, divider, content, image-led, and closing slides with editable text, shapes, charts, and tables. Divider and content backgrounds use the retained photograph `assets/photos/three-gorges-dam.jpg` under a semi-transparent white overlay — ≈88% opacity on the divider, ≈83% on content pages. It is CC BY-SA 2.0 (Thomas Bächinger / Wikimedia Commons): record that attribution in the slide's `[Sources]` notes. Use independent topic visuals elsewhere. Unless the current user explicitly requests another phrase, the default visible closing title is `谢谢聆听`.
 4. Place the combined lockup exactly once on every slide, choosing the colorway by background: `hohai-lockup-blue-transparent.png` on light backgrounds, `hohai-lockup-white-transparent.png` on dark backgrounds; place it directly — never add a plate, rail, or mat behind it — and keep clear space of at least 25% of the lockup's height on all sides. Scale proportionally only. `assets/hohai-emblem-authorized.png` is optional and may be PowerPoint-cropped only to its declared transparent-margin `content_bbox`; never crop visible emblem pixels. Omit the optional emblem when it would merely duplicate the emblem already present in the combined lockup. Never redraw, retype, vectorize, generate, fetch, recolor, sharpen, stretch, background-remove, or reconstruct either asset.
-5. Render every slide and inspect at full size. Verify identity visibility, editability, spacing, crops, absence of source content, and absence of all anniversary pixels or wording. For identity: zoom to 100% on each lockup — the colorway must contrast with its background, and no white rectangle may sit behind or around any lockup.
+5. Render every slide and inspect at full size. Verify identity visibility, editability, spacing, crops, text contrast, absence of source content, and absence of all anniversary pixels or wording. For identity: zoom to 100% on each lockup — the colorway must contrast with its background, and no white rectangle may sit behind or around any lockup.
 
 ## Quick reference
 
@@ -69,4 +76,6 @@ Default closing title: `谢谢聆听`; use another closing phrase only when the 
 - Changing the transparent assets' visible pixels or recoloring them breaks the authorized assets.
 - Crossing colorways — blue version on a dark background or white version on a light background — makes the lockup invisible.
 - Adding any plate, rail, or mat behind a transparent lockup — white or tinted — reintroduces the white-rectangle sticker problem; place the lockup directly.
+- Inheriting white or pale-blue titles from a dark source rail after the rail has become a pale wash makes the text appear missing; repair the title and label colors for the actual rendered background.
 - A text search alone cannot detect anniversary symbols baked into images; inspect every final visual.
+
