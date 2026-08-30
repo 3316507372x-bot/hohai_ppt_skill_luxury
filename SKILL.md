@@ -36,6 +36,12 @@ Resolve paths relative to this skill directory:
 
 Run `python scripts/verify_assets.py` before authoring. If `python` is unavailable or blocked, use the Python executable returned by the workspace dependency loader; the interpreter must provide Pillow. Stop if verification fails.
 
+## Chinese typography
+
+- Use `Microsoft YaHei` (`微软雅黑`) as the primary Chinese font for titles, body text, labels, captions, and notes. Use Bold/Semibold for titles and emphasis, and Regular for body text.
+- If `Microsoft YaHei` is unavailable, fall back in order to `Source Han Sans SC` (`思源黑体`) or `Noto Sans CJK SC`, then `DengXian` (`等线`). Use `Aptos` or `Arial` for English and numbers.
+- Do not use macOS-only `Songti SC`, `Hiragino Sans GB`, or `PingFang SC` as the primary font in Windows PowerPoint deliverables. Render and inspect the final PPTX; never rasterize text.
+
 ## Workflow
 
 1. Read [references/visual-system.md](references/visual-system.md). Read [references/asset-provenance.md](references/asset-provenance.md) whenever identity placement, source reuse, or fidelity is in question.
