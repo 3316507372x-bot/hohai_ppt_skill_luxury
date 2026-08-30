@@ -25,7 +25,7 @@ These images contain sample content. Read them for composition only; never copy 
 | White | Titles on deep blue. The transparent lockup colorways need no white plate or rail behind them. |
 | Warm ivory | Optional for one high-emphasis cover or closing title; keep it restrained. |
 
-Prefer concrete, PDF-safe system faces. **Titles:** Songti SC Black or Bold (macOS `Songti.ttc`; equivalent bold Song face elsewhere). **Body, labels, captions:** Hiragino Sans GB (W6 for emphasis, W3 for body) or PingFang SC. **English and numbers:** a neutral sans-serif (Helvetica/Arial). All of these embed cleanly in PDF export; never rely on rasterized type.
+Use Chinese-compatible faces that render consistently in Windows PowerPoint. **Chinese titles, body, labels, captions, and notes:** `Microsoft YaHei` (`微软雅黑`) as the primary face; use Bold/Semibold for titles and emphasis, and Regular for body text. If it is unavailable, fall back to `Source Han Sans SC` (`思源黑体`) or `Noto Sans CJK SC`, then `DengXian` (`等线`). **English and numbers:** `Aptos` or `Arial`. Do not use macOS-only `Songti SC`, `Hiragino Sans GB`, or `PingFang SC` as the primary face in Windows deliverables; never rely on rasterized type.
 
 Match source proportions rather than guessing exact rasterized font names. Keep titles on one line when intended; change wording or layout before shrinking type.
 
@@ -66,7 +66,7 @@ Match source proportions rather than guessing exact rasterized font names. Keep 
 ### Closing
 
 - Return to deep blue with `hohai-lockup-white-transparent.png` placed directly on the blue, top center or upper right.
-- Use one short closing title and one optional statement.
+- Use `谢谢聆听` as the default visible closing title, unless the current user explicitly requests another phrase, plus one optional statement.
 - Use one panoramic or organic-window water-engineering image.
 - Exclude contact details, QR codes, admissions slogans, and anniversary marks unless the current user explicitly supplies and requests them; the retained deck does not authorize them.
 
