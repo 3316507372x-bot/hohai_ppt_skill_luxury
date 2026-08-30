@@ -27,5 +27,12 @@ if ($skill -notmatch 'Microsoft YaHei.*微软雅黑.*primary Chinese font') {
 if ($visualSystem -notmatch 'Microsoft YaHei.*微软雅黑.*primary face') {
     throw 'visual-system.md does not set a Windows-compatible Chinese primary face.'
 }
+if ($skill -notmatch 'White or near-white text is prohibited on these light fields') {
+    throw 'SKILL.md does not prohibit low-contrast white text on light fields.'
+}
+if ($visualSystem -notmatch 'white/near-white text is never placed on a light wash') {
+    throw 'visual-system.md does not include the light-field text contrast guard.'
+}
 
 Write-Output 'visual system check passed'
+
