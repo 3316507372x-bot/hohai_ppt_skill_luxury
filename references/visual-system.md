@@ -20,6 +20,7 @@ These images contain sample content. Read them for composition only; never copy 
 |---|---|
 | Deep Hohai blue | Use near `#074A99` to `#0B3F86` for covers, closings, conclusion strips, and strong rules. Prefer subtle gradients between nearby blues (e.g. `#0B3F86` → `#1E6FC4`) over large flat fills. |
 | Primary blue | Use near `#0B5CB8` for headings, icons, and connectors. |
+| Text on light wash | Use deep Hohai blue near `#074A99` or `#0B3F86` for titles, labels, captions, and notes; white or near-white text is prohibited on the light field. |
 | Photo wash | Divider: white overlay ≈88% opacity over the retained dam photo (`../assets/photos/three-gorges-dam.jpg`). Content pages: ≈83%. The wash is a light field and carries the blue lockup colorway. |
 | Pale field | `#F4F9FE` to `#EAF4FC` — fallback content background when no suitable photo is available. |
 | White | Titles on deep blue. The transparent lockup colorways need no white plate or rail behind them. |
@@ -53,6 +54,7 @@ Match source proportions rather than guessing exact rasterized font names. Keep 
 - A small section label and thin horizontal rule across the top.
 - Exact combined lockup at the upper right — `hohai-lockup-blue-transparent.png` placed directly on the wash.
 - Bold dark-blue Chinese title; information reads left to right or top to bottom.
+- The top section label, page label, and title must use deep Hohai blue on the light wash. Never inherit white or pale-blue text from a dark source rail after the rail becomes light.
 - Prefer one flat composition: image plus explanation, process flow, comparison, chart, or table.
 - Use a pale-blue takeaway strip or dark-blue conclusion strip only when the page needs a single conclusion.
 
@@ -81,6 +83,7 @@ For a digital-twin water-conservancy presentation: opening title; challenge; sen
 - No whole source slide appears as a background.
 - The exact user-authorized combined lockup appears once per slide, is legible at normal slide-view scale, and retains its original aspect ratio.
 - The colorway always contrasts with its background: blue transparent version on light, white transparent version on dark; no white rectangle sits behind or around any lockup.
+- Every title, section label, page label, caption, and note remains legible against its actual rendered background; white/near-white text is never placed on a light wash or pale-blue field.
 - No `110`, anniversary slogan, or anniversary-only motif appears in text or pixels.
 
 ## Identity placement
@@ -98,3 +101,4 @@ Two transparent colorways of the combined lockup are authorized:
 - `../assets/hohai-lockup-authorized.jpg` (blue artwork on a white field) is the archival original: use it only on a pure `#FFFFFF` background, where its field is invisible.
 
 **Verification:** render the slide, zoom to 100% on the lockup, and confirm the colorway contrasts with its background and no white rectangle appears behind or around it.
+
