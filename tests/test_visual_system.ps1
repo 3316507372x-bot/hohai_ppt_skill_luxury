@@ -33,6 +33,12 @@ if ($skill -notmatch 'White or near-white text is prohibited on these light fiel
 if ($visualSystem -notmatch 'white/near-white text is never placed on a light wash') {
     throw 'visual-system.md does not include the light-field text contrast guard.'
 }
+if ($skill -notmatch 'Apply the same guard to the combined lockup image') {
+    throw 'SKILL.md does not require lockup colorway repair after importing a light-background slide.'
+}
+if ($visualSystem -notmatch 'replace a white lockup on a light field') {
+    throw 'visual-system.md does not require a visible lockup on light fields.'
+}
 
 Write-Output 'visual system check passed'
 
