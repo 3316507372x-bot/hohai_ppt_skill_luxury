@@ -15,5 +15,17 @@ if ($visualSystem -notmatch 'white overlay at about \*\*83% opacity\*\*') {
 if ($provenance -notmatch 'divider,.*83% content') {
     throw 'provenance.json does not record the 83 percent content wash.'
 }
+if ($skill -notmatch 'default visible closing title is `谢谢聆听`') {
+    throw 'SKILL.md does not set 谢谢聆听 as the default closing title.'
+}
+if ($visualSystem -notmatch 'Use `谢谢聆听` as the default visible closing title') {
+    throw 'visual-system.md does not set 谢谢聆听 as the default closing title.'
+}
+if ($skill -notmatch 'Microsoft YaHei.*微软雅黑.*primary Chinese font') {
+    throw 'SKILL.md does not set a Windows-compatible Chinese primary font.'
+}
+if ($visualSystem -notmatch 'Microsoft YaHei.*微软雅黑.*primary face') {
+    throw 'visual-system.md does not set a Windows-compatible Chinese primary face.'
+}
 
 Write-Output 'visual system check passed'
