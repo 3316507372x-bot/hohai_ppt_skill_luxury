@@ -47,6 +47,7 @@ Run `python scripts/verify_assets.py` before authoring. If `python` is unavailab
 - Treat the retained source deck's inherited text colors as untrusted. After importing or duplicating a source slide, repair typography **and** text color before rendering.
 - On light backgrounds — including the 83% content wash, white content fields, and pale-blue header bands — use deep Hohai blue (`#074A99` or `#0B3F86`) for titles, section labels, page labels, captions, and notes. White or near-white text is prohibited on these light fields.
 - Use white text only on confirmed deep-blue fields or sufficiently dark image areas. Do not rely on a theme color, a master placeholder, or the source slide's inherited color to establish contrast.
+- Apply the same guard to the combined lockup image: use `hohai-lockup-blue-transparent.png` on every light field and `hohai-lockup-white-transparent.png` only on a confirmed deep-blue or dark image field. Replace a mismatched inherited lockup; never recolor, redraw, or merely leave it faint.
 - Render every slide at full size and inspect every title, section label, page label, and caption at normal presentation scale. Reject white-on-pale, pale-on-pale, clipped, missing, or visibly faint text before delivery.
 
 ## Workflow
